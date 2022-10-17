@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>counter-increment</title>
+	<style type="text/css">
+		body{
+			counter-reset: name;
+		}
+		H2::before{
+			counter-increment: name;
+			content:"part "counter(name)".";
+		}
+	</style>
+</head>
+<body>
+	<h2>fast and furious</h2>
+	<h2>fast and furious</h2>
+	<h2>fast and furious</h2>
+	<h2>fast and furious</h2>
+	<h2>fast and furious</h2>
+	<h2>fast and furious</h2>
+	<h2>fast and furious</h2>
+	<h2>fast and furious</h2>
+	<h2>fast and furious</h2>
+</body>
+</html>
