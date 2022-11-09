@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script>
+function openCity(evt, cityName) {
+
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<style type="text/css">.tabcontent {
+  display: none;
+}
+
+
+
+</style>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="nav-wrapper">
+        <ul>
+            <li><a href="index.html">HOME  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="about.html">ABOUT US &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="contact.html">CONTACT US </a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Header Section -->
+    <header class="header-wrapper">
+        <div class="row">
+            <div class="col">
+                <img src="earth-158805_960_720.jpg" class="logo" alt="" width="30%" height="130px">
+                <h1 style="margin-top: -20%; margin-left:40%; font-size: 40px; color: gold;">Company Name</h1>
+            </div>
+            <div class="col">
+                <div class="search">
+                    <span><i class="fas fa-search"></i></span>
+                    <input type="text" placeholder="Search... " name="" id="">
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li><button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Web Layout</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'Paris')">Logo</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'Tokyo')">Banner</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'mumbai')">Flayer</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="services-wrapper" id="Web">
+        <div id="London" class="tabcontent">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves.  </p>
+                    
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>Featured Content Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime suscipit corporis autem quo sequi temporibus adipisci. Laboriosam incidunt quaerat, quos impedit aliquam, exercitationem, esse ullam porro alias aspernatur enim atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores et harum repellat! Ipsa ipsum, aperiam, qui possimus totam, numquam laboriosam nulla suscipit consequuntur fugiat veritatis! Nesciunt consequuntur magni deleniti?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, tenetur, illum, aspernatur laudantium natus quis aperiam numquam inventore et molestiae expedita quibusdam voluptate cupiditate quidem iure. Tenetur ea voluptate suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, vel quibusdam officia ipsam voluptas corrupti eveniet eaque repellendus doloribus ipsa perspiciatis incidunt pariatur quo architecto commodi reiciendis! Ducimus, dolorum iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore earum </p>
+            
+                
+            </div>
+        </div>
+    </div>
+     <div id="Paris" class="tabcontent" style="display: block;">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves.   </p>
+                
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>About Our Logo</h1>
+                <p>Recycling is the process of converting waste materials into new materials and objects. The recovery of energy from waste materials is often included in this concept. The recyclability of a material depends on its ability to reacquire the properties it had in its original state.[1] It is an alternative to "conventional" waste disposal that can save material and help lower greenhouse gas emissions. It can also prevent the waste of potentially useful materials and reduce the consumption of fresh raw materials, reducing energy use, air pollution (from incineration) and water pollution.<br>
+                Recycling is a key component of modern waste reduction and is the third component of the "Reduce, Reuse, and Recycle" waste hierarchy.[2][3] It promotes environmental sustainability by removing raw material input and redirecting waste output in the economic system.[4] There are some ISO standards related to recycling, such as ISO 15270:2008 for plastics waste and ISO 14001:2015 for environmental management control of recycling practice.
+</p>
+               </div>
+        </div>
+    </div>
+     <div id="Tokyo" class="tabcontent">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves. </p>
+                    <br><br>
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>About Recycle Company Banner</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                
+                </p>
+                <br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div id="mumbai" class="tabcontent">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves.</p>
+                    <br><br>
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>Flyer</h1>
+                <p>PRODUCT
+COMPANY
+SEARCH
+Share on Facebook
+Share on Twitter
+Share on Linkedin
+Share via email
+Share via Facebook Messenger
+How to Write Strong Paragraphs
+Matt Ellis
+Matt Ellis
+Updated on
+June 2, 2022
+STUDENTS
+WRITING TIPS
+Paragraph Structure
+Paragraphs are medium-sized units of writing, longer than sentences, but shorter than sections, chapters, or entire works. Because they connect the “small” ideas of individual sentences to a “bigger” idea, paragraph structure is essential to any writing for organization, flow, and comprehension. 
+te confidently
+WRITE WITH GRAMMARLY
+ Parts of a paragraph
+Like other forms of writing, paragraphs follow a standard three-part structure with a beginning, middle, and end. These parts are the topic sentence, development and support, and conclusion. 
+
+Topic sentences, also known as “paragraph leaders,” introduce the main idea that the paragraph is about. They shouldn’t reveal too much on their own, but rather prepare the reader for the rest of the paragraph by stating clearly what topic will be discussed. 
+
+               </p>
+                <div class="read"> 
+            </div>
+            </div>
+        </div>
+    </div>
+        <br><br><br>
+    </section>
+
+    <section class="welcome-wrapper">
+        <div class="row-1 row">
+            <div class="col-2">
+                <!-- <br><br> -->
+                <h1>Welcome To Our Site...</h1>
+                <hr>
+                <br>
+                <p>The lotus flower is regarded as the National Flower of India. Lotus symbolises beauty, purity and knowledge. It is an aquatic flower with round leaves floating on the water. It grows in freshwater lakes and shallow ponds. It is a beautiful flower which has an appealing fragrance and colour.</p>
+                <br><br>
+                <p>They come in different colours such as red, white, pink, yellow, etc. A rose plant has small and sharp thorns on its stem. The flower looks beautiful when it blooms in the garden. Rose symbolises beauty, love and compassion. The petals of a rose are soft and used in perfumes due to its fragrance.</p>
+                <br><br>
+                <p>The common sunflower (H. annuus) is an annual herb with a rough hairy stem 1–4.5 metres (3–15 feet) high and broad, coarsely toothed, rough leaves 7.5–30 cm (3–12 inches) long arranged in spirals. The attractive heads of flowers are 7.5–15 cm wide in wild specimens and often 30 cm or more in cultivated types.</p>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                 <br><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                 <br><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+            <div class="col-3">
+                <h1>Latest Projects</h1>
+                <div class="projects">
+                    <br>
+                    <div class="row">
+                        <span><input type="checkbox"></span> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <p>Modern Web 2.0 Styled Web Templete</p>
+                    </div>
+                    <img src="attractive-modern-web-template-with-flat-ui-vector-5444136.jpg" alt="" width="80%" height="300px">
+<br><br>
+                    <div class="row">
+                        <span><input type="checkbox"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p>Banner Design</p>
+                    </div>
+                    <img src="images.jpg" alt="" width="80%" height="150px">
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <!-- Footer -->
+    <footer>
+         <ul>
+         <li>pages:</li>
+         <li><a href=""> &nbsp;&nbsp;Home&nbsp;&nbsp;.&nbsp;&nbsp;</a></li>
+         <li><a href="">About &nbsp;&nbsp;. &nbsp;&nbsp;</a></li>
+         <li><a href="">Contact us</a></li>
+         </ul>
+         <ul class="m1">
+            over activities:
+            <li><a href="">web templete -&nbsp;</a></li>
+            <li><a href="">web graphice -&nbsp;</a></li>
+            <li><a href="">web logo -&nbsp;</a></li>
+            <li><a href="">web banner -&nbsp;</a></li>
+            <li><a href="">flayer -&nbsp;</a></li>
+            <li><a href="">broucher etc designing</a></li>
+         </ul>
+         <div class="copy">
+         <p>copyright 2010 by ariful tonu,all rights reserved.</p>
+         <p>desigh a modem web 2.0styled web layout</p>
+         </div>
+      </footer>
+</body>
+</html>
