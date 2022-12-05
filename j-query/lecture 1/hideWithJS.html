@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hide Content with JS</title>
+</head>
+<body>
+
+		<h1 id="test">This is going to be hide</h1>
+		<button onclick="hide()">Hide</button>
+		<button onclick="show()">show</button>
+
+</body>
+<script type="text/javascript">
+
+	function hide()
+	{
+		document.getElementById('test').style.display="none";
+	}
+	function show()
+	{
+		document.getElementById('test').style.display="block";
+	}
+	
+</script>
+</html>

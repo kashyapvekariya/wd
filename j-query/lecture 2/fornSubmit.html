@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>Form Submit Events</title>
+	<style type="text/css">
+		.a{
+			margin-left: 135px;
+			margin-top: 12px;
+		}
+	</style>
+	</head>
+<body>
+
+		<form>
+			<label>Enter your Username</label>
+			<input type="text" name=""><br><br>
+			<label>Enter your Password</label>
+			<input type="password" name=""><br>
+			<input type="submit" name="" value="Submit" class="a">
+
+		</form>
+</body>
+<script type="text/javascript">
+	
+		$(document).ready(function(){
+			$("form").submit(function(){
+				alert("form submitted")
+			})
+		});	
+
+</script>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute change using j-query</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<img src="com.jpg" width="200px" height="200px"><br><br>
+	<button>click here</button>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("img").attr("width","300px")
+			$("img").attr("height","300px")
+		});
+	});
+</script>
+</html>

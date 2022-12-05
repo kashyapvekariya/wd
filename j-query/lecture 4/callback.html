@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Call Back</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<h1>This is Going to Be Hide</h1>
+	<button>Hide</button>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("h1").hide(3000, function(){
+				alert("done")
+			})
+		});	
+	});
+</script>
+</html>

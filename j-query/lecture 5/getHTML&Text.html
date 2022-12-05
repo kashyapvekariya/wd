@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get HTML and Text</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+	<i>This is <b>Heading Tag</b> which is used for heading</i>
+	<button id="btn1">click here to HTML</button>
+	<button id="btn2">click here to know text</button>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			alert($("i").html());
+		});
+		$("#btn2").click(function(){
+			alert($("i").text());
+		});
+	});
+</script>
+</html>

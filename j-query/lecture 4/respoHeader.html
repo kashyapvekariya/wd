@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style type="text/css">
+    	*{
+    		margin: 0;
+    		padding: 0;
+    		box-sizing: border-box;
+    	}
+    	header{
+    		width: 100%;
+    		height: 150px;
+    		display: flex;
+    		border: 1px solid black;
+    	}
+    	.logo{
+    		width: 15%;
+    		height: inherit;
+    	}
+    	.logo img{
+    		width: 100%;
+    		height: 100%;
+    	}
+    	nav{
+    		width: 85%;
+    		height: inherit;
+    		border: 1px solid black;
+    	}
+    	nav ul{
+    		float: right;
+    		margin-top: 5%;
+    		/*border: 1px solid black;*/
+    	}
+    	nav ul li{
+    		/*border: 1px solid black;*/
+    		display: inline-block;
+    		padding: 15px;
+    		font-size: 40px;
+
+    	}
+    	.fa{
+    		display: none;
+    	}
+    	@media(max-width: 480px)
+    	{
+    		nav{
+    			height: auto;
+    			width: 100%;
+    			position: absolute;
+    			top: 150px;
+    			display: none;
+
+    		}
+    		nav ul{
+    			width: 100%;
+    			text-align: center;
+    		}
+    		nav ul li
+    		{
+    			display: block;
+    			font-size: 20px;
+    		}
+    		#start{
+    			display: block;
+    			position: absolute;
+    			right: 15px;
+    			top: 15px;
+    		}
+    		#close{
+    			display: block;
+    			position: absolute;
+    			right: 15px;
+    			top: 30px;
+    		}
+    	}
+
+    </style>
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<img src="logo1.jpg">
+		</div>
+		<i class="fa fa-bars" id="start"></i>
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Product</li>
+				<li>Service</li>
+				<li>Contact us</li>
+			</ul>
+		</nav>
+		<i class="fa fa-close" id="close"></i>
+	</header>
+
+
+    
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#close").click(function(){
+			$("nav").hide(2000)
+		});
+		$("#start").click(function(){
+			$("nav").show(2000)
+		});
+	});
+</script>
+</html>

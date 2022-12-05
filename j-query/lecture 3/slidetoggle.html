@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>slidetoggle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style type="text/css">
+        body{
+        }
+        .a{
+            height: 100px;
+            width: 100%;
+            background-color: hotpink;
+        }
+        .b{
+            height: 200px;
+            width: 25%;
+            background-color: cadetblue;
+            position: absolute;
+            margin-right: 0px;
+            border: 1px solid black;
+        }
+        .c{
+            height: 200px;
+            width: 25%;
+            background-color: blue;
+            margin-left: 24%;
+            position: absolute;
+            border: 1px solid black;
+        }
+        .d{
+            height: 200px;
+            width: 25%;
+            background-color: salmon;
+            margin-left: 49%;
+            position: absolute;
+            border: 1px solid black;
+        }
+        .e{
+            height: 200px;
+            width: 25%;
+            background-color: chocolate;
+            margin-left: 75%;
+            border: 1px solid black;
+        }
+        button{
+            margin-left: 50%;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+
+    <button>slideup</button>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(".b").slideToggle(2000)
+            $(".c").slideToggle(3000)
+            $(".d").slideToggle(4000)
+            $(".e").slideToggle(5000)
+           
+        });
+    });
+</script>
+
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set HTML Tag</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+		<h1>This is h1 tag</h1>
+		<button>change into h2</button>
+
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("h1").html("<h2>This is h2 tag</h2>")
+		});
+	});
+</script>
+</html>
